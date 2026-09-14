@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR Corporation | Sustainable Global Sourcing, Agro-Food & Manufacturing Ecosystem</title>
+  <meta name="description" content="Official Corporate Portal for MR Corporation, MRS Foods, FARMINO, MR Fresh, and Mr & Mrs. Global trading, agro-commodity supply, solar drying, and institutional B2B procurement.">
+  <meta name="keywords" content="MR Corporation, MRS Foods, FARMINO, MR Fresh, Mr & Mrs, B2B Procurement, Solar Dried Mango, Agro Commodities, UN Supply, digitCare ERP">
+  <meta name="author" content="digitCare ERP">
+  
+  <!-- PWA Manifest & Theme Color -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0ea5e9">
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="MR Corporation - Modern Corporate Ecosystem">
+  <meta property="og:description" content="Pioneering sustainable agro-food supply, solar dehydrated superfoods, and global institutional procurement.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "MR Corporation",
+    "alternateName": ["MRS Foods", "FARMINO", "MR Fresh", "Mr & Mrs"],
+    "description": "Diversified corporate group specializing in global trading, value-added agro foods, solar-dried superfoods, fresh produce, and sustainable apparel.",
+    "foundingDate": "2015",
+    "areaServed": "Global",
+    "knowsAbout": ["B2B Procurement", "Agro Commodities", "Solar Dehydration", "UN Ration Supply", "Sustainable Manufacturing"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow ambient-top-left"></div>
+  <div class="ambient-glow ambient-bottom-right"></div>
+
+  <!-- Top Announcement / Multi-Brand Quick Bar -->
+  <div class="top-notice-bar">
+    <div>
+      <span class="notice-pill">Ecosystem Group</span>
+      <span>MR Corporation • MRS Foods • FARMINO • MR Fresh • Mr & Mrs</span>
+    </div>
+    <div class="notice-links">
+      <a href="#rfq" onclick="document.getElementById('open-rfq-drawer-btn').click(); return false;">
+        <span>⚡ Fast B2B RFQ Portal</span>
+      </a>
+      <a href="#sdg">
+        <span>🌱 UN SDG 2030 Dashboard</span>
+      </a>
+      <a href="#resources">
+        <span>📥 Download Center</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">MR</div>
+        <div>
+          <span>MR Corporation</span>
+          <span class="corp-tag">Enterprise Ecosystem</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#ecosystem" class="nav-link">Business Ecosystem</a></li>
+        <li class="nav-item"><a href="#catalogue" class="nav-link">Product Catalogue</a></li>
+        <li class="nav-item"><a href="#sdg" class="nav-link">Sustainability & SDG</a></li>
+        <li class="nav-item"><a href="#fair-price" class="nav-link">Fair Price Shops</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Corporate Profile</a></li>
+        <li class="nav-item"><a href="#resources" class="nav-link">Resources</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Switcher -->
+        <button id="theme-toggle-btn" class="btn-icon" title="Toggle Theme" aria-label="Toggle Theme">
+          🌙
+        </button>
+
+        <!-- Quotation Cart Trigger -->
+        <button id="open-rfq-drawer-btn" class="btn-icon" title="Quotation Basket" aria-label="Open RFQ Drawer">
+          📋
+          <span id="rfq-badge-count" class="badge-counter" style="display: none;">0</span>
+        </button>
+
+        <!-- Direct Action Button -->
+        <button class="btn btn-primary" onclick="document.getElementById('open-rfq-drawer-btn').click();">
+          Request a Quote (RFQ)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-badge">
+          <span>🛡️</span> Certified Global Trade & Agro Platform
+        </span>
+        <h1 class="hero-title">
+          Powering Sustainable <span class="text-gradient">Agro-Food, Solar Drying</span> & Global Procurement
+        </h1>
+        <p class="hero-subtitle">
+          MR Corporation delivers end-to-end supply chain excellence across 5 diversified business verticals — from UN/Government procurement and value-added foods to solar-dried superfoods and ethical manufacturing.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalogue" class="btn btn-primary">
+            Explore 5-Brand Catalogue
+          </a>
+          <a href="#ecosystem" class="btn btn-outline">
+            Discover Business Pillars
+          </a>
+          <button class="btn btn-emerald" onclick="document.getElementById('ai-bubble-btn').click();">
+            🤖 AI Procurement Guide
+          </button>
+        </div>
+
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <h4>5+</h4>
+            <p>Integrated Brands</p>
+          </div>
+          <div class="stat-item">
+            <h4>75,000+</h4>
+            <p>MT Annual Supply</p>
+          </div>
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Traceable Sourcing</p>
+          </div>
+          <div class="stat-item">
+            <h4>18+</h4>
+            <p>Export Markets</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Interactive Preview Card -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="stack-header">
+            <div>
+              <div style="font-weight: 800; font-size: 1.1rem;">MR Group Ecosystem Hub</div>
+              <div style="font-size: 0.775rem; color: var(--text-muted);">Real-time B2B trade & production status</div>
+            </div>
+            <span class="live-indicator">
+              <span class="live-dot"></span> Online Ecosystem
+            </span>
+          </div>
+
+          <div class="ecosystem-pills">
+            <div class="eco-pill" onclick="filterByBrandShortcut('MR Corporation')">
+              <div class="eco-pill-left">
+                <div class="eco-pill-icon" style="background: rgba(14, 165, 233, 0.15); color: var(--primary);">🌐</div>
+                <div>
+                  <div class="eco-pill-title">MR Corporation</div>
+                  <div class="eco-pill-sub">Trading • Institutional & UN Rations</div>
+                </div>
+              </div>
+              <span class="tag-badge">B2B Core</span>
+            </div>
+
+            <div class="eco-pill" onclick="filterByBrandShortcut('MRS Foods')">
+              <div class="eco-pill-left">
+                <div class="eco-pill-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--emerald);">🌾</div>
+                <div>
+                  <div class="eco-pill-title">MRS Foods</div>
+                  <div class="eco-pill-sub">Agro-Commodities • Mustard Oil • Rice</div>
+                </div>
+              </div>
+              <span class="tag-badge">Bulk Milling</span>
+            </div>
+
+            <div class="eco-pill" onclick="filterByBrandShortcut('FARMINO')">
+              <div class="eco-pill-left">
+                <div class="eco-pill-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--amber);">☀️</div>
+                <div>
+                  <div class="eco-pill-title">FARMINO</div>
+                  <div class="eco-pill-sub">Solar-Dried Powders • Women-Led</div>
+                </div>
+              </div>
+              <span class="tag-badge" style="color: var(--amber); border-color: rgba(245, 158, 11, 0.3);">Zero Waste</span>
+            </div>
+
+            <div class="eco-pill" onclick="filterByBrandShortcut('MR Fresh')">
+              <div class="eco-pill-left">
+                <div class="eco-pill-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--emerald);">🍌</div>
+                <div>
+                  <div class="eco-pill-title">MR Fresh</div>
+                  <div class="eco-pill-sub">Direct Farm Harvests • Cold Chain</div>
+                </div>
+              </div>
+              <span class="tag-badge">GAP Farm</span>
+            </div>
+
+            <div class="eco-pill" onclick="filterByBrandShortcut('Mr & Mrs')">
+              <div class="eco-pill-left">
+                <div class="eco-pill-icon" style="background: rgba(139, 92, 246, 0.15); color: var(--purple);">👕</div>
+                <div>
+                  <div class="eco-pill-title">Mr & Mrs</div>
+                  <div class="eco-pill-sub">Sustainable Apparel • Industrial Wear</div>
+                </div>
+              </div>
+              <span class="tag-badge">Ethical Mfg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5-BRAND BUSINESS ECOSYSTEM SECTION
+       ========================================================================== -->
+  <section id="ecosystem" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Business Architecture</span>
+        <h2 class="section-title">The 5 Core Pillars of <span class="text-gradient">MR Corporation</span></h2>
+        <p class="section-desc">
+          A synchronized conglomerate uniting primary farming, renewable solar dehydration, food processing, institutional procurement, and ethical garment manufacturing.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="ecosystem-tabs">
+        <button class="eco-tab-btn active" data-tab="mrcorp">🌐 MR Corporation</button>
+        <button class="eco-tab-btn" data-tab="mrsfoods">🌾 MRS Foods</button>
+        <button class="eco-tab-btn" data-tab="farmino">☀️ FARMINO (Solar Drying)</button>
+        <button class="eco-tab-btn" data-tab="mrfresh">🥬 MR Fresh (Farm Supply)</button>
+        <button class="eco-tab-btn" data-tab="mrandmrs">🧵 Mr & Mrs (Fashion)</button>
+      </div>
+
+      <!-- Dynamic Tab Target -->
+      <div id="ecosystem-card-target">
+        <div class="eco-tab-content-card">
+          <div>
+            <span class="eco-brand-badge btn-primary">🌐 MR Corporation</span>
+            <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Global Trading, Sourcing & Institutional Procurement</h3>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6;">
+              The corporate backbone managing cross-border trade, national supply chains, government tenders, and UN humanitarian aid programs with audited compliance and swift execution.
+            </p>
+            
+            <ul class="eco-feature-list">
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Government & Defense Food Supply
+              </li>
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                UN / WFP Humanitarian Rations
+              </li>
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                International B2B Bulk Sourcing
+              </li>
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Integrated Cold-Chain Logistics
+              </li>
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Trade Finance & Structured LC Support
+              </li>
+              <li class="eco-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Fair Price Retail Networks
+              </li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+              <a href="#catalogue" class="btn btn-primary" onclick="filterByBrandShortcut('MR Corporation')">
+                Explore MR Corporation Products
+              </a>
+              <button class="btn btn-outline" onclick="openRFQWithChannel('MR Corporation')">
+                Direct Enquiry
+              </button>
+            </div>
+          </div>
+
+          <div class="eco-card-preview">
+            <h4 style="font-size: 1.15rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem;">
+              Operational Benchmark & Metrics
+            </h4>
+            <div class="spec-grid">
+              <div class="spec-box">
+                <div class="spec-label">Global Trade Hubs</div>
+                <div class="spec-val">12+ Ports</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-label">Institutional Lead Time</div>
+                <div class="spec-val">&lt; 14 Days</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-label">Annual Tonnage</div>
+                <div class="spec-val">75,000+ MT</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-label">Compliance Index</div>
+                <div class="spec-val">100% Audit Ready</div>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem; padding: 1rem; background: var(--bg-surface-elevated); border-radius: var(--radius-sm); font-size: 0.825rem; color: var(--text-secondary); border-left: 3px solid var(--primary);">
+              <strong>ERP Integration:</strong> Linked to digitCare smart manufacturing & live traceability ledger.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCT CATALOGUE SYSTEM (B2B / RFQ READY)
+       ========================================================================== -->
+  <section id="catalogue" class="section" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge emerald">Structured B2B Catalogue</span>
+        <h2 class="section-title">Explore Verified <span class="text-gradient">Product Portfolio</span></h2>
+        <p class="section-desc">
+          Browse verified products with technical HS codes, origin details, minimum order quantities (MOQ), and add multiple items to your custom Quotation Basket.
+        </p>
+      </div>
+
+      <!-- Filters and Search Bar -->
+      <div class="catalogue-controls">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Brands</button>
+          <button class="filter-btn" data-filter="farmino">☀️ FARMINO (Solar)</button>
+          <button class="filter-btn" data-filter="mrsfoods">🌾 MRS Foods</button>
+          <button class="filter-btn" data-filter="mrfresh">🍌 MR Fresh</button>
+          <button class="filter-btn" data-filter="mrandmrs">👕 Mr & Mrs</button>
+          <button class="filter-btn" data-filter="mrcorporation">🌐 MR Corp Supply</button>
+        </div>
+
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="product-search-input" placeholder="Search by name, category, or HS code..." aria-label="Search catalogue">
+        </div>
+      </div>
+
+      <!-- Product Grid Target -->
+      <div id="products-grid" class="product-grid">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SUSTAINABILITY & SDG DASHBOARD
+       ========================================================================== -->
+  <section id="sdg" class="section sdg-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge emerald">Impact & ESG Framework</span>
+        <h2 class="section-title">UN Sustainable Development Goals <span class="text-gradient">(SDG 2030)</span></h2>
+        <p class="section-desc">
+          MR Corporation measures business growth through verifiable social and environmental impact metrics.
+        </p>
+      </div>
+
+      <!-- Live Impact Metrics Row -->
+      <div class="impact-metrics-row">
+        <div class="impact-metric-card">
+          <div class="impact-icon">☀️</div>
+          <div class="impact-number">3,800+ MT</div>
+          <div class="impact-label">Solar-Dried Produce Processed</div>
+        </div>
+        <div class="impact-metric-card">
+          <div class="impact-icon">🥗</div>
+          <div class="impact-number">45.2%</div>
+          <div class="impact-label">Post-Harvest Food Waste Reduced</div>
+        </div>
+        <div class="impact-metric-card">
+          <div class="impact-icon">👩‍🌾</div>
+          <div class="impact-number">820+</div>
+          <div class="impact-label">Women Farmers Directly Employed</div>
+        </div>
+        <div class="impact-metric-card">
+          <div class="impact-icon">🏪</div>
+          <div class="impact-number">45,000+</div>
+          <div class="impact-label">Workers Supported via Fair Price Shops</div>
+        </div>
+      </div>
+
+      <!-- SDG Impact Cards Grid -->
+      <div class="sdg-grid">
+        <div class="sdg-card" onclick="showToast('SDG 1: Expanding contract farming in climate-vulnerable zones.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #E5243B;">SDG 01</span>
+            <span>🤝</span>
+          </div>
+          <h4 class="sdg-name">No Poverty</h4>
+          <p class="sdg-desc">Guaranteed fair-price purchase contracts for 3,500+ smallholder farmers across Northern Bangladesh.</p>
+        </div>
+
+        <div class="sdg-card" onclick="showToast('SDG 2: Emergency food security reserves supplied to UN & Government.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #DDA63A;">SDG 02</span>
+            <span>🌾</span>
+          </div>
+          <h4 class="sdg-name">Zero Hunger</h4>
+          <p class="sdg-desc">Preserving perishable seasonal fruits & grains through low-cost solar drying for off-season nutrition.</p>
+        </div>
+
+        <div class="sdg-card" onclick="showToast('SDG 5: 80% female leadership in FARMINO production units.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #FF3A21;">SDG 05</span>
+            <span>👩‍💼</span>
+          </div>
+          <h4 class="sdg-name">Gender Equality</h4>
+          <p class="sdg-desc">FARMINO solar drying centers are 100% women-operated, providing dignified rural income & financial literacy.</p>
+        </div>
+
+        <div class="sdg-card" onclick="showToast('SDG 7: 100% solar thermal energy utilized for fruit dehydration.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #FCC30B;">SDG 07</span>
+            <span>⚡</span>
+          </div>
+          <h4 class="sdg-name">Affordable & Clean Energy</h4>
+          <p class="sdg-desc">Utilizing zero-emission parabolic solar collectors and hybrid photovoltaic drying tunnels.</p>
+        </div>
+
+        <div class="sdg-card" onclick="showToast('SDG 12: Zero food wastage through secondary value addition.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #BF8B2E;">SDG 12</span>
+            <span>♻️</span>
+          </div>
+          <h4 class="sdg-name">Responsible Consumption</h4>
+          <p class="sdg-desc">Converting cosmetic-reject fruits into export-quality mango, banana, and dragon fruit powder.</p>
+        </div>
+
+        <div class="sdg-card" onclick="showToast('SDG 13: Low carbon footprint agro supply chains.')">
+          <div class="sdg-header">
+            <span class="sdg-num" style="color: #3F7E44;">SDG 13</span>
+            <span>🌱</span>
+          </div>
+          <h4 class="sdg-name">Climate Action</h4>
+          <p class="sdg-desc">Decarbonized logistics, biodegradable export packaging, and localized cold storage hubs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAIR PRICE SHOP FOUNDATION SECTION
+       ========================================================================== -->
+  <section id="fair-price" class="section">
+    <div class="container">
+      <div class="fps-banner">
+        <div>
+          <span class="section-badge amber">Community & Worker Welfare</span>
+          <h2 class="section-title">Fair Price Shop <span class="text-gradient-amber">Foundation</span></h2>
+          <p class="section-desc" style="margin-bottom: 1.5rem;">
+            MR Corporation partners with industrial employers, RMG factories, and CSR programs to establish dedicated <strong>Fair Price Grocery Shops</strong> inside industrial parks — providing essential commodities at wholesale subsidized rates.
+          </p>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <span class="brand-chip" style="background: rgba(245, 158, 11, 0.2); color: var(--amber);">✓ 20-30% Subsidized Staples</span>
+            <span class="brand-chip" style="background: rgba(245, 158, 11, 0.2); color: var(--amber);">✓ Zero Mark-Up Essential Nutrition</span>
+            <span class="brand-chip" style="background: rgba(245, 158, 11, 0.2); color: var(--amber);">✓ Digital Worker Wallet Support</span>
+          </div>
+        </div>
+
+        <!-- Interactive Impact Calculator -->
+        <div class="fps-calculator">
+          <h3 class="calc-title">
+            <span>🧮</span> Employer Impact Calculator
+          </h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.25rem;">
+            Calculate the monthly worker grocery savings your factory or corporation can generate:
+          </p>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <span>Number of Factory Workers:</span>
+              <span id="fps-workers-val" class="slider-val">2,500 Workers</span>
+            </div>
+            <input type="range" id="fps-workers-input" min="500" max="25000" step="500" value="2500" class="range-slider">
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-label">Estimated Monthly Worker Savings</div>
+            <div id="fps-calc-result" class="calc-result-val">BDT 4,625,000 / month</div>
+          </div>
+
+          <button class="btn btn-emerald" style="width: 100%; margin-top: 1.25rem;" onclick="openRFQWithChannel('Fair Price Shop')">
+            Partner for Your Workforce
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESOURCE & DOWNLOAD CENTRE
+       ========================================================================== -->
+  <section id="resources" class="section" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Compliance & Documentation</span>
+        <h2 class="section-title">Resource & <span class="text-gradient">Download Centre</span></h2>
+        <p class="section-desc">
+          Instant access to certified corporate profiles, capability statements, audit compliance reports, and technical product specifications.
+        </p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card" onclick="downloadResource('MR Corporation Capability Statement 2026')">
+          <div class="res-icon">📄</div>
+          <div class="res-info">
+            <h5>Group Capability Statement</h5>
+            <p>PDF • 4.8 MB • Updated Q3 2026</p>
+          </div>
+        </div>
+
+        <div class="resource-card" onclick="downloadResource('FARMINO Solar Dehydrated Product Catalog')">
+          <div class="res-icon">☀️</div>
+          <div class="res-info">
+            <h5>FARMINO Technical Catalog</h5>
+            <p>PDF • 6.2 MB • Fruit Powders & Specs</p>
+          </div>
+        </div>
+
+        <div class="resource-card" onclick="downloadResource('ISO 22000 & HACCP Audit Certificate Bundle')">
+          <div class="res-icon">🛡️</div>
+          <div class="res-info">
+            <h5>ISO 22000 / HACCP Certs</h5>
+            <p>PDF • 2.1 MB • Global Accreditation</p>
+          </div>
+        </div>
+
+        <div class="resource-card" onclick="downloadResource('Institutional & UN Supply Pre-Qualification Dossier')">
+          <div class="res-icon">🌐</div>
+          <div class="res-info">
+            <h5>UN & Institutional Dossier</h5>
+            <p>PDF • 8.5 MB • Compliance & Tenders</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT & LEADERSHIP SECTION
+       ========================================================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Executive Vision</span>
+        <h2 class="section-title">Built on Trust, Integrity & <span class="text-gradient">Excellence</span></h2>
+        <p class="section-desc">
+          Headquartered in Dhaka with direct agro-processing centers, farms, and trade branches across Bangladesh.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">From Local Sourcing to Global Supply Chains</h3>
+          <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+            MR Corporation bridges the gap between rural farmers and institutional buyers worldwide. Through technological empowerment, ethical procurement, and strict quality control, we ensure sustainable trade practices that benefit both growers and end-consumers.
+          </p>
+          <div style="padding: 1rem; background: var(--bg-surface-elevated); border-left: 3px solid var(--emerald); border-radius: var(--radius-sm); font-size: 0.9rem;">
+            <em>"Our mission is to establish a world-class digital trade infrastructure that empowers our farmers, protects nutritional value, and delivers flawless reliability to our international partners."</em>
+            <div style="margin-top: 0.5rem; font-weight: 700; color: var(--text-primary);">— Corporate Management Desk</div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-surface-elevated); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <h4 style="font-size: 1.15rem; margin-bottom: 1rem;">Corporate Contact & Global Desk</h4>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: var(--text-secondary);">
+            <div>🏢 <strong>Corporate HQ:</strong> Plot 02, Road 02, Block C, Pallabi, Dhaka 1216, Bangladesh</div>
+            <div>📞 <strong>Commercial Desk:</strong> (+88) 01312345653</div>
+            <div>📧 <strong>Trade Inquiries:</strong> info@digitcare.work</div>
+            <div>🌐 <strong>ERP Architecture:</strong> digitCare ERP Smart Manufacturing</div>
+          </div>
+          <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;" onclick="document.getElementById('open-rfq-drawer-btn').click();">
+            Initiate B2B Inquiry
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="logo-symbol">MR</div>
+            <span>MR Corporation</span>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; max-width: 340px;">
+            A unified conglomerate driving sustainable agro-commodities, clean solar drying technology, fresh harvests, and ethical trade worldwide.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Business Pillars</h5>
+          <ul class="footer-links">
+            <li><a href="#ecosystem" onclick="filterByBrandShortcut('MR Corporation')">MR Corporation Trade</a></li>
+            <li><a href="#ecosystem" onclick="filterByBrandShortcut('MRS Foods')">MRS Foods Milling</a></li>
+            <li><a href="#ecosystem" onclick="filterByBrandShortcut('FARMINO')">FARMINO Solar Tech</a></li>
+            <li><a href="#ecosystem" onclick="filterByBrandShortcut('MR Fresh')">MR Fresh Produce</a></li>
+            <li><a href="#ecosystem" onclick="filterByBrandShortcut('Mr & Mrs')">Mr & Mrs Apparel</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Special Channels</h5>
+          <ul class="footer-links">
+            <li><a href="#catalogue">B2B Product Catalogue</a></li>
+            <li><a href="#fair-price">Fair Price Shop Foundation</a></li>
+            <li><a href="#sdg">UN SDG 2030 Dashboard</a></li>
+            <li><a href="#resources">Resource & Download Center</a></li>
+            <li><a href="#" onclick="document.getElementById('cms-dock-toggle-btn').click(); return false;">digitCare CMS Preview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick RFQ Access</h5>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Ready to receive competitive quotation terms and technical documentation?
+          </p>
+          <button class="btn btn-primary" style="width: 100%;" onclick="document.getElementById('open-rfq-drawer-btn').click();">
+            Open Quotation Desk
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 MR Corporation. All Rights Reserved. Platform Architecture by <strong>digitCare ERP</strong>.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" onclick="showToast('Privacy & ISO Compliance Policy Loaded'); return false;">Privacy Policy</a>
+          <a href="#" onclick="showToast('Export Terms & Incoterms Loaded'); return false;">Export Terms</a>
+          <a href="#" onclick="showToast('Security & Data Protection Active'); return false;">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       B2B RFQ SLIDE-OUT DRAWER
+       ========================================================================== -->
+  <div id="rfq-backdrop" class="drawer-backdrop"></div>
+  <aside id="rfq-drawer" class="rfq-drawer" aria-label="Request For Quote Drawer">
+    <div class="drawer-header">
+      <div>
+        <h3 style="font-size: 1.25rem; font-weight: 700;">Quotation Desk (RFQ)</h3>
+        <p style="font-size: 0.775rem; color: var(--text-muted);">Multi-Channel B2B & Institutional Procurement</p>
+      </div>
+      <button id="close-rfq-drawer-btn" style="background: none; border: none; font-size: 1.25rem; color: var(--text-secondary); cursor: pointer;">
+        ✕
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Injected RFQ Items List -->
+      <div id="rfq-items-container">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <form id="rfq-submission-form">
+        <h4 style="font-size: 0.95rem; margin-bottom: 1rem; color: var(--primary);">Procurement & Buyer Information</h4>
+        
+        <div class="form-group">
+          <label class="form-label" for="rfq-channel-select">Inquiry Channel / Entity Type</label>
+          <select id="rfq-channel-select" class="form-select" required>
+            <option value="International Importer / Trader">International Importer / Trader</option>
+            <option value="Government Procurement Desk">Government Procurement Desk</option>
+            <option value="UN / NGO / Humanitarian Agency">UN / NGO / Humanitarian Agency</option>
+            <option value="Distributor / Wholesaler">Distributor / Wholesaler</option>
+            <option value="Retail Chain Buyer">Retail Chain Buyer</option>
+            <option value="Fair Price Shop Partner">Fair Price Shop Partner</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="rfq-company-name">Company / Organization Name</label>
+          <input type="text" id="rfq-company-name" class="form-input" placeholder="e.g. Apex Global Trade Ltd" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="rfq-contact-name">Contact Person</label>
+            <input type="text" id="rfq-contact-name" class="form-input" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="rfq-contact-email">Official Email</label>
+            <input type="email" id="rfq-contact-email" class="form-input" placeholder="name@company.com" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="rfq-destination">Destination Port / Country</label>
+            <input type="text" id="rfq-destination" class="form-input" placeholder="e.g. Rotterdam / Dubai / Chittagong" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="rfq-incoterm">Preferred Incoterm</label>
+            <select id="rfq-incoterm" class="form-select">
+              <option value="FOB">FOB (Free on Board)</option>
+              <option value="CIF">CIF (Cost, Insurance & Freight)</option>
+              <option value="CFR">CFR (Cost and Freight)</option>
+              <option value="EXW">EXW (Ex Works)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="rfq-notes">Specific Requirements, Custom Packaging or Certifications</label>
+          <textarea id="rfq-notes" class="form-textarea" rows="3" placeholder="Specify volume, target delivery timeline, custom private labeling, or testing specs..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem; font-size: 1rem;">
+          Submit Official RFQ
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       AI PROCUREMENT ASSISTANT (CHATBOT WIDGET)
+       ========================================================================== -->
+  <div id="ai-bubble-btn" class="ai-assistant-bubble" title="Chat with MR Corp AI Assistant" aria-label="Open AI Assistant">
+    <div class="ai-pulse"></div>
+    <span style="font-size: 1.6rem; z-index: 2;">🤖</span>
+  </div>
+
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-label="AI Assistant Window">
+    <div class="ai-header">
+      <div class="ai-header-info">
+        <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--primary); display: grid; place-items: center; color: white; font-weight: 700;">AI</div>
+        <div>
+          <div style="font-weight: 700; font-size: 0.9rem;">MR Corp AI Assistant</div>
+          <div style="font-size: 0.7rem; color: var(--emerald);">● Connected to digitCare Core</div>
+        </div>
+      </div>
+      <button id="close-ai-chat-btn" style="background: none; border: none; font-size: 1.1rem; color: var(--text-secondary); cursor: pointer;">✕</button>
+    </div>
+
+    <div id="ai-messages-list" class="ai-messages">
+      <div class="ai-msg bot">
+        Hello! I am your <strong>MR Corporation AI Assistant</strong>. How can I assist you with product specifications, export terms, MOQ, or RFQ processing today?
+      </div>
+    </div>
+
+    <div class="ai-quick-prompts">
+      <span class="quick-chip">What is FARMINO MOQ?</span>
+      <span class="quick-chip">Export Incoterms</span>
+      <span class="quick-chip">UN Ration Packs</span>
+      <span class="quick-chip">Halal & ISO Certs</span>
+    </div>
+
+    <div class="ai-input-area">
+      <input type="text" id="ai-user-input" placeholder="Ask about products, MOQ, export..." aria-label="Chat input">
+      <button id="ai-send-btn" class="btn btn-primary" style="padding: 0.4rem 0.9rem;">Send</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DIGITCARE CMS LIVE MANAGEMENT DOCK
+       ========================================================================== -->
+  <div class="cms-dock">
+    <div class="cms-dock-left">
+      <span class="cms-brand-tag">digitCare CMS</span>
+      <span><strong>Live Preview Mode:</strong> Non-technical content & lead administration</span>
+    </div>
+    <div style="display: flex; gap: 0.75rem;">
+      <button id="cms-dock-toggle-btn" class="btn btn-outline" style="padding: 0.35rem 0.85rem; font-size: 0.75rem;">
+        ⚡ Open CMS Admin Drawer
+      </button>
+    </div>
+  </div>
+
+  <!-- Global Modal Dialog -->
+  <div id="global-modal-overlay" class="modal-overlay" onclick="if(event.target === this) closeModal();">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title" style="font-size: 1.2rem; font-weight: 700;"></h3>
+        <button onclick="closeModal()" style="background: none; border: none; font-size: 1.25rem; color: var(--text-secondary); cursor: pointer;">✕</button>
+      </div>
+      <div id="modal-body-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
